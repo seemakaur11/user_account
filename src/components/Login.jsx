@@ -3,7 +3,8 @@ import { Field, reduxForm } from 'redux-form'
 import { connect } from 'react-redux';
 import styled from 'styled-components';
 import { auth } from '../Firebase';
-
+import { useHistory } from 'react-router-dom';
+let history ;
 
 const Container = styled.div`
     width: 100%;
@@ -132,7 +133,7 @@ const renderField = ({ input, label, type, meta: { touched, error} }) => {
     }
 const LoginPopup= (props) => {
     const { handleSubmit, pristine, reset, submitting} = props;
-  
+    history = useHistory();
     const submit = data => {return data}
     return (
      
@@ -166,8 +167,9 @@ export default  connect()(reduxForm({
        await auth.signInWithEmailAndPassword(data.email, data.password)
         .then(()=>{
             alert("user logged in successfully")
+            history.push('/')
         }).catch((error) =>{ 
             alert(`Error --> ${error.message} ErrorCode -->${400}`)
         })
     }
-})( LoginPopup))
+})(LoginPopup))
