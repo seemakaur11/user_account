@@ -78,4 +78,27 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
-}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+}  
+.time_data{
+  text-align: center;
+  justify-content: center;
+  color: green;
+  font-family:Arial, Helvetica, sans-serif;
+} 
+.input_date{
+  text-align: center;
+  align-items: center;
+  margin-left: 544px;
+  height: 30px;
+  width: 214px;
+}
+.calender{
+  align-items: center;
+  margin-left: 482px;
+  margin-top: 30px;
+  color: chocolate;
+}  
+.moment{
+  color:indigo
+}     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

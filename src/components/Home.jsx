@@ -17,7 +17,7 @@ const HomePage = (slides) => {
     } 
     return (
         <section className = "slider">
-            <FaArrowAltCircleLeft className = "left_arrow" onClick = { prevSlider } />
+           <FaArrowAltCircleLeft className = "left_arrow" onClick = { prevSlider } />
             <FaArrowAltCircleRight className = "right_arrow" onClick = { nextSlider }/>
            {SlideData.map((slide,index) => {
                return (
