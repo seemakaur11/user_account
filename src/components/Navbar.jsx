@@ -10,6 +10,7 @@ export default class Navbar extends Component {
                     <Link to="/Login" className="nav-link">login</Link>
                     <Link to="/Signup" className="nav-link">signup</Link>
                     <Link to="/Forget" className="nav-link">forget-password</Link>
+                    <Link to="/Time" className="nav-link">Time</Link>
                 </NavWrapper>
             </Fragment>
         )
@@ -19,6 +20,7 @@ export default class Navbar extends Component {
 const NavWrapper = styled.nav`
     background: black;
     height: 75px;
+    width: 1450px;
     padding-top: 22px;
     .nav-link {
         color: white;

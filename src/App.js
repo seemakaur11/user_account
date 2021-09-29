@@ -9,6 +9,7 @@ import ForgetPassword from './components/ForgetPassword';
 import HomePage from './components/Home';
 import { SlideData } from './components/SlideData';
 import Navbar from './components/Navbar';
+import Time from './components/Time';
 
 class App extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class App extends React.Component {
             <Route path = '/Signup'><Form/></Route> 
              <Route path ='/Login' component={LoginPopup}></Route>
             <Route path ='/Forget' component={ForgetPassword}></Route>
+            <Route path='/Time' component={Time}></Route>
          </Switch>
          </Router>
        </Provider>
